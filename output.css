@@ -627,6 +627,14 @@ video {
   height: 0.125rem;
 }
 
+.h-\[40\%\] {
+  height: 40%;
+}
+
+.h-\[60\%\] {
+  height: 60%;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1271,6 +1279,10 @@ ul li:after {
 
   .lg\:h-\[80vh\] {
     height: 80vh;
+  }
+
+  .lg\:h-auto {
+    height: auto;
   }
 
   .lg\:w-\[230px\] {
