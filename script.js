@@ -6,6 +6,29 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle('active');
 });
 
+
+// JavaScript for Scroll-to-Top Button
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Show or hide the button based on scroll position
+window.addEventListener('scroll', () => {
+  if (window.scrollY > window.innerHeight * 2) { // 200vh
+    scrollToTopBtn.classList.add('show');
+    scrollToTopBtn.classList.remove('hide');
+  } else {
+    scrollToTopBtn.classList.add('hide');
+    scrollToTopBtn.classList.remove('show');
+  }
+});
+
+// Smooth scroll to top when the button is clicked
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 function toggleToc() {
   const tocContainer = document.querySelector('.toc-container');
   tocContainer.classList.toggle('open');
@@ -22,3 +45,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+

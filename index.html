@@ -49,27 +49,7 @@
 
                 <div class="lg:hidden flex items-center gap-1">
 
-                    <div class="relative dropdown">
-                        <!-- Dropdown Trigger -->
-                        <button id="selected-language"
-                            class="flex items-center bg-transparent border border-transparent hover:border-red-500 ease duration-200 rounded-full p-1">
-                            <img id="selected-flag" src="./assets/en.svg" alt="English Flag" class="min-w-6 min-h-6">
-                        </button>
-
-                        <!-- Dropdown Menu -->
-                        <div class="dropdown-menu bg-zinc-900 border border-zinc-600 rounded-md shadow-md">
-                            <!-- English Option -->
-                            <a href="./index.html" class="flex items-center px-2 py-2 ">
-                                <img src="./assets/en.svg" alt="English Flag" class="w-6 h-6 mr-2">
-                                <span class="text-white">EN</span>
-                            </a>
-                            <!-- Bangla Option -->
-                            <a href="./home-bd.html" class="flex items-center px-2 py-2 ">
-                                <img src="./assets/bd.svg" alt="Bangladesh Flag" class="w-6 h-6 mr-2">
-                                <span class="text-white">BD</span>
-                            </a>
-                        </div>
-                    </div>
+                   
 
                     <div class="flex justify-end w-full">
                         <button aria-label="navbar Opener" id="hamburger"
@@ -133,27 +113,7 @@
                 </a>
             </nav>
 
-            <div class="relative dropdown hidden lg:block">
-                <!-- Dropdown Trigger -->
-                <button id="selected-language"
-                    class="flex items-center bg-transparent border border-transparent hover:border-red-500 ease duration-200 rounded-full p-1">
-                    <img id="selected-flag" src="./assets/en.svg" alt="English Flag" class="w-8 h-8">
-                </button>
-
-                <!-- Dropdown Menu -->
-                <div class="dropdown-menu bg-zinc-900 border border-zinc-600 rounded-md shadow-md">
-                    <!-- English Option -->
-                    <a href="./index.html" class="flex items-center px-2 py-2 ">
-                        <img src="./assets/en.svg" alt="English Flag" class="w-8 h-8 mr-2">
-                        <span class="text-white">EN</span>
-                    </a>
-                    <!-- Bangla Option -->
-                    <a href="./home-bd.html" class="flex items-center px-2 py-2 ">
-                        <img src="./assets/bd.svg" alt="Bangladesh Flag" class="w-8 h-8 mr-2">
-                        <span class="text-white">BD</span>
-                    </a>
-                </div>
-            </div>
+            
 
         </div>
 
@@ -179,6 +139,9 @@
 
     <main>
 
+        <button class="scroll-to-top" id="scrollToTopBtn">↑</button>
+
+
         <!-- hero -->
         <section
             class=" px-[5%] bg-[#45454F] pt-[10rem] lg:pt-[12rem] flex flex-col-reverse lg:flex-row gap-10 items-center justify-center lg:h-[100vh]">
@@ -193,7 +156,7 @@
                     favorable odds, different prediction options, and a generous welcome bonus for newcomers of up to
                     20,000 BDT.
                 </h2>
-                <a href="">
+                <a href="" title="Start betting now" aria-label="start betting now">
                     <button
                         class="py-4 px-6 bg-white border border-dashed border-black hover:border-white duration-200 hover:bg-black hover: hover:text-white rounded-full mt-10 text-xl font-bold">
                         Start Betting
@@ -242,7 +205,7 @@
         </section>
 
         <!-- About -->
-        <section id="about" >
+        <section id="about">
             <h2 class="heading">
                 About MegaPari
             </h2>
@@ -323,41 +286,58 @@
         </section>
 
         <!-- Bonus -->
-        <section id="bonus" >
+        <section id="bonus">
             <h2 class="heading">
                 Welcome bonus for new users up to 20,000 BDT
             </h2>
             <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-5">
                 <div class="lg:w-[60%]">
-                    <p>After registering and making your first deposit, you’ll be able to receive a MegaPari BD starter bonus. We will double any first deposit amount up to 20,000 BDT and allow you to withdraw this money after several conditions are met. To take part in the promotion, you only need to do a few actions:
+                    <p>After registering and making your first deposit, you’ll be able to receive a MegaPari BD starter
+                        bonus. We will double any first deposit amount up to 20,000 BDT and allow you to withdraw this
+                        money after several conditions are met. To take part in the promotion, you only need to do a few
+                        actions:
                     </p>
                     <ol class="pt-5 list-decimal">
-                        <li class="pb-5">
-                            <strong class="inline">Registration. </strong><p class="inline">
-                                Create an account on the official MegaPari Bangladesh website. To do this, open the main page, click on the Registration button, choose how to create an account, and fill in all the blank fields. Be sure to specify the promo code MEGA2022;
+                        <li class="">
+                            <strong class="inline">Registration. </strong>
+                            <p class="inline">
+                                Create an account on the official MegaPari Bangladesh website. To do this, open the main
+                                page, click on the Registration button, choose how to create an account, and fill in all
+                                the blank fields. Be sure to specify the promo code MEGA2022;
                             </p>
                         </li>
-                        <li class="pb-5">
-                            <strong class="inline">Specify personal information. </strong><p class="inline">
-                                Go to the account settings and enter your information in all the empty fields. Only use real information. If you make a mistake or enter false information on purpose, you won’t be able to verify your account in the future;
+                        <li class="">
+                            <strong class="inline">Specify personal information. </strong>
+                            <p class="inline">
+                                Go to the account settings and enter your information in all the empty fields. Only use
+                                real information. If you make a mistake or enter false information on purpose, you won’t
+                                be able to verify your account in the future;
                             </p>
                         </li>
                         <li>
-                            <strong class="inline"> Deposit. </strong><p class="inline">
-                                Press the Deposit button to go to the cashier’s desk. Then select a payment system, fill in the details and confirm the operation. The minimum deposit amount to activate a bonus is 100 BDT. The maximum amount of the bonus – 26,000 BDT.
+                            <strong class="inline"> Deposit. </strong>
+                            <p class="inline">
+                                Press the Deposit button to go to the cashier’s desk. Then select a payment system, fill
+                                in the details and confirm the operation. The minimum deposit amount to activate a bonus
+                                is 100 BDT. The maximum amount of the bonus – 26,000 BDT.
 
                             </p>
                         </li>
                     </ol>
-                    
+
                 </div>
                 <div class="lg:w-[40%]">
-                    <img src="./assets/Welcome-bonus-for-new-users-up-to-20000-B0DT.webp" class="aspect-auto" alt="Welcome bonus for new users up to 20000 B0DT">
+                    <img src="./assets/Welcome-bonus-for-new-users-up-to-20000-B0DT.webp" class="aspect-auto"
+                        alt="Welcome bonus for new users up to 20000 B0DT">
                 </div>
-                
+
             </div>
             <p>
-                When the money arrives on your balance, the bonus will be automatically credited to your account. But you will not be able to withdraw the money immediately. To be able to get them to a bank card or e-wallet, you must meet the conditions of wagering. To do this you will need to make bets for 5 times the amount of bonus within 3 months. In this case, bets must be of an express type for 3 or more events with odds of not less than 1.4 for each.
+                When the money arrives on your balance, the bonus will be automatically credited to your account. But
+                you will not be able to withdraw the money immediately. To be able to get them to a bank card or
+                e-wallet, you must meet the conditions of wagering. To do this you will need to make bets for 5 times
+                the amount of bonus within 3 months. In this case, bets must be of an express type for 3 or more events
+                with odds of not less than 1.4 for each.
 
             </p>
         </section>
@@ -369,7 +349,8 @@
             </h2>
             <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-5">
                 <div class="lg:w-[60%]">
-                    <p>Playing on the official site of MegaPari Bangladesh will appeal to all sports betting enthusiasts. Our company operates in the country legally and offers users various benefits:
+                    <p>Playing on the official site of MegaPari Bangladesh will appeal to all sports betting
+                        enthusiasts. Our company operates in the country legally and offers users various benefits:
                     </p>
                     <ul class="pt-5">
                         <li class="">
@@ -392,102 +373,852 @@
                         </li>
                     </ul>
                     <p>
-                        In order to start betting on the official MegaPari website, it is enough to go through a short registration procedure. After that, you will get access to all the functions and features of the site.
+                        In order to start betting on the official MegaPari website, it is enough to go through a short
+                        registration procedure. After that, you will get access to all the functions and features of the
+                        site.
                     </p>
-                    
+
                 </div>
                 <div class="lg:w-[40%]">
-                    <img src="./assets/The-official-site-of-Mega-Pari-for-sports-betting-in-Bangladesh4.webp" class="aspect-auto" alt="The official site of Mega Pari for sports betting in Bangladesh4">
+                    <img src="./assets/The-official-site-of-Mega-Pari-for-sports-betting-in-Bangladesh4.webp"
+                        class="aspect-auto" alt="The official site of Mega Pari for sports betting in Bangladesh4">
                 </div>
-                
+
             </div>
 
         </section>
 
-         <!-- signup -->
-         <section id="signup" >
+        <!-- signup -->
+        <section id="signup">
             <h2 class="heading">
                 How to sign up for MegaPari BD: step-by-step instructions?
             </h2>
             <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-10">
                 <div class="lg:w-[60%]">
-                    <p>You must be 18 years old or older to create an account on this site. Minors are not allowed to gamble or bet on sports. If you are already 18 years old, go through 3 short steps to start playing:
+                    <p>You must be 18 years old or older to create an account on this site. Minors are not allowed to
+                        gamble or bet on sports. If you are already 18 years old, go through 3 short steps to start
+                        playing:
                     </p>
                     <ol class="pt-5 list-decimal">
-                        <li class="pb-5">
-                            <strong class="inline">Open the registration form.  </strong><p class="inline">
-                                Go to the home page of the site and click the button to register your account. Choose how to create an account by phone number, email, or 1-click;
+                        <li class="">
+                            <strong class="inline">Open the registration form. </strong>
+                            <p class="inline">
+                                Go to the home page of the site and click the button to register your account. Choose
+                                how to create an account by phone number, email, or 1-click;
                             </p>
                         </li>
-                        <li class="pb-5">
-                            <strong class="inline">Select the type of bonus. </strong><p class="inline">
-                                Next to the registration form, you will be able to select one of the current MegaPari bonuses. If you are interested in sports betting, specify the sports bonus;
+                        <li class="">
+                            <strong class="inline">Select the type of bonus. </strong>
+                            <p class="inline">
+                                Next to the registration form, you will be able to select one of the current MegaPari
+                                bonuses. If you are interested in sports betting, specify the sports bonus;
                             </p>
                         </li>
                         <li>
-                            <strong class="inline"> Provide information. </strong><p class="inline">
-                                Fill out the form with personal information. Also, be sure to enter the promo code in the appropriate field. The current promo code for MegaPari Bangladesh is <b>MEGA2022</b>.
+                            <strong class="inline"> Provide information. </strong>
+                            <p class="inline">
+                                Fill out the form with personal information. Also, be sure to enter the promo code in
+                                the appropriate field. The current promo code for MegaPari Bangladesh is
+                                <b>MEGA2022</b>.
 
                             </p>
                         </li>
                     </ol>
                     <p class="py-5">
-                        After completing the registration, you will be able to log in to your account, deposit your account, and start playing. The created account will be suitable for authorization both on the official website and in the mobile application.
+                        After completing the registration, you will be able to log in to your account, deposit your
+                        account, and start playing. The created account will be suitable for authorization both on the
+                        official website and in the mobile application.
                     </p>
                 </div>
                 <div class="lg:w-[40%]">
                     <img src="./assets/main-registration.webp" class="aspect-auto" alt="Register on Megapari">
                 </div>
-                
+
             </div>
-           
+
         </section>
 
-         <!-- signup -->
-         <section id="signup" >
+        <!-- betting -->
+        <section id="betting">
             <h2 class="heading">
                 How to start betting?
             </h2>
             <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-10">
                 <div class="lg:w-[60%]">
-                    <p>In order for you to start betting at the MegaPari Bangladesh bookmaker’s office, you need to go through several steps, starting with registration, and finishing with placing the bet itself. Below we will tell you what you need to do:
+                    <p>In order for you to start betting at the MegaPari Bangladesh bookmaker’s office, you need to go
+                        through several steps, starting with registration, and finishing with placing the bet itself.
+                        Below we will tell you what you need to do:
                     </p>
                     <ol class="pt-5 list-decimal">
-                        <li class="pb-5">
-                            <strong class="inline">Create an account.  </strong><p class="inline">
+                        <li class="">
+                            <strong class="inline">Create an account. </strong>
+                            <p class="inline">
                                 Register an account on the official MegaPari website;
                             </p>
                         </li>
-                        <li class="pb-5">
-                            <strong class="inline">Download the app. </strong><p class="inline">
-                                If you want to play through the Android or iOS app, download it from the site and install it. If not, you can also bet on the official site in your browser;
+                        <li class="">
+                            <strong class="inline">Download the app. </strong>
+                            <p class="inline">
+                                If you want to play through the Android or iOS app, download it from the site and
+                                install it. If not, you can also bet on the official site in your browser;
                             </p>
                         </li>
                         <li>
-                            <strong class="inline"> Refill your account. </strong><p class="inline">
+                            <strong class="inline"> Refill your account. </strong>
+                            <p class="inline">
                                 Open a cash register and make a deposit. Do not forget the welcome bonus;
                             </p>
                         </li>
                         <li>
-                            <strong class="inline"> Make a bet. </strong><p class="inline">
-                                Select the matches and outcomes you are interested in and place a bet by specifying the type and amount.
+                            <strong class="inline"> Make a bet. </strong>
+                            <p class="inline">
+                                Select the matches and outcomes you are interested in and place a bet by specifying the
+                                type and amount.
                             </p>
                         </li>
                     </ol>
                     <p class="py-5">
-                        If the prediction turns out to be correct, you will receive a payout and can withdraw it through the cashier.
+                        If the prediction turns out to be correct, you will receive a payout and can withdraw it through
+                        the cashier.
                     </p>
                 </div>
                 <div class="lg:w-[40%]">
-                    <img src="./assets/main-registration.webp" class="aspect-auto" alt="Register on Megapari">
+                    <img src="./assets/How-to-start-betting.webp" class="aspect-auto"
+                        alt="how to start betting on megapari">
                 </div>
-                
+
             </div>
-           
+
         </section>
 
+        <!-- mobile -->
+        <section id="mobile">
+            <h2 class="heading">
+                MegaPari BD mobile app for Android and iOS
+            </h2>
+            <p class="py-5 text-center">
+                If you want to feel an even greater level of comfort when betting on sports, download the mobile
+                application of the bookmaker’s office on your smartphone. We have developed two separate versions of the
+                client for popular operating systems and offer to download them for free on the official website for
+                everyone.
+            </p>
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-[60%]">
+                    <h3 class="text-2xl font-bold py-3 sub-heading">Download MegaPari BD app on Android</h3>
+                    <p>If you are using an Android mobile device, download this version. It can only be downloaded from
+                        our website. The application is not available on Play Market. To download and install the
+                        program on your smartphone, do the following:
+                    </p>
+                    <ol class="pt-5 list-decimal">
+                        <li class="">
+                            <strong class="inline">Open the website. </strong>
+                            <p class="inline">
+                                On the home page of our website, click on “Smartphone App”;
+                            </p>
+                        </li>
+                        <li class="">
+                            <strong class="inline">Download the APK file. </strong>
+                            <p class="inline">
+                                Click the button to download the app and wait for it to complete;
+                            </p>
+                        </li>
+                        <li>
+                            <strong class="inline"> Allow installation. </strong>
+                            <p class="inline">
+                                Open the cell phone’s security settings and allow apps from unknown sources to be
+                                installed;
+                            </p>
+                        </li>
+                        <li>
+                            <strong class="inline"> Install the program. </strong>
+                            <p class="inline">
+                                When the MegaPari Bangladesh APK is finished downloading, open this file and confirm the
+                                installation. </p>
+                        </li>
+                    </ol>
+                    <p class="py-3">
+                        In just a minute you will be able to log in to the application through the shortcut on the
+                        desktop, enter your username and password and start betting on your favorite sports.
 
+                    </p>
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/main-android.webp" class="aspect-auto"
+                        alt="download the megapari app for android">
+                </div>
+
+            </div>
+
+            <div>
+                <h3 class="text-2xl pb-5">Android System Requirements</h3>
+                <table class="has-fixed-layout">
+                    <tbody>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Android version</td>
+                            <td class="has-text-align-center" data-align="center">5.1</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Main memory</td>
+                            <td class="has-text-align-center" data-align="center">1 Gb</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Free space</td>
+                            <td class="has-text-align-center" data-align="center">46 Mb</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Processor</td>
+                            <td class="has-text-align-center" data-align="center">1 GHz</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-[60%]">
+                    <h3 class="text-2xl font-bold py-3 sub-heading">Download MegaPari BD app on iOS</h3>
+                    <p>For iPhone and iPad users, we have prepared another version of the application running on the iOS
+                        operating system. You can also download it from the official website. To do this, just follow a
+                        few steps:
+
+                    </p>
+                    <ol class="pt-5 list-decimal">
+                        <li class="">
+                            <strong class="inline">Open the site. </strong>
+                            <p class="inline">
+                                Go to your browser on your smartphone and open the home page of the site. Then select
+                                the “Smartphone App” section;
+                            </p>
+                        </li>
+                        <li class="">
+                            <strong class="inline">Go to the App Store. </strong>
+                            <p class="inline">
+                                Click the button to download the app and wait for it to complete;
+                            </p>
+                        </li>
+                        <li>
+                            <strong class="inline"> Allow installation. </strong>
+                            <p class="inline">
+                                Click the button to download the app to get to its official page in the App Store;
+                            </p>
+                        </li>
+                        <li>
+                            <strong class="inline"> Install the client. </strong>
+                            <p class="inline">
+                                Follow the instructions in the Apple Digital Store to install the software.</p>
+                        </li>
+                    </ol>
+                    <p class="py-3">
+                        The MegaPari Bangladesh mobile app for iOS does not differ in features and appearance from the
+                        Android version. You will be able to make any kind of bet, get bonuses and other benefits.
+
+                    </p>
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/main-ios.webp" class="aspect-auto" alt="download the megapari app for IOS">
+                </div>
+
+            </div>
+
+            <div>
+                <h3 class="text-2xl pb-5">IOS System Requirements</h3>
+                <table class="has-fixed-layout">
+                    <tbody>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">iOS version</td>
+                            <td class="has-text-align-center" data-align="center">8.0</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Main memory</td>
+                            <td class="has-text-align-center" data-align="center">1 Gb</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Free space</td>
+                            <td class="has-text-align-center" data-align="center">46 Mb</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Processor</td>
+                            <td class="has-text-align-center" data-align="center">1 GHz</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- advantages -->
+        <section id="advantages">
+            <h2 class="heading">
+                Advantages of MegaPari
+            </h2>
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-5">
+                <div class="lg:w-[60%]">
+                    <p>
+                        We do our best to provide the most comfortable conditions for betting to all our clients. After
+                        registering and depositing your account at megaPari Bangladesh you can count on many important
+                        benefits that will make your gambling experience unforgettable:
+                    </p>
+                    <ul class="pt-5">
+                        <li class="">
+                            Large welcome bonus for new players of up to 20,000 BDT;
+                        </li>
+                        <li class="">
+                            A functional mobile application for Android and iOS smartphones;
+                        </li>
+                        <li>
+                            More than 40 sports and 1000 events for betting every day;
+                        </li>
+                        <li>
+                            24-hour support service, ready to help solve any problem;
+                        </li>
+                        <li>
+                            Dozens of types of payment systems at the box office.
+                        </li>
+
+                    </ul>
+                    <p>
+                        We are constantly evolving, offering new features and functions to our players. Stay with
+                        MegaPari and there will be even more profitable betting opportunities ahead of you.
+                    </p>
+
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/Advantages-of-Mega-Pari555.webp" class="aspect-auto"
+                        alt="Advantages of Megapari">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Types -->
+        <section id="types">
+            <h2 class="heading">
+                Types of sports betting at MegaPari BD
+            </h2>
+            <p class="py-5 text-center">
+                One of the main advantages of the bookmaker’s office is the support of a large number of sports for
+                betting. With us, you will be able to make predictions on the most popular sports.
+            </p>
+
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-[60%]">
+                    <h3 class="text-2xl font-bold py-3 sub-heading">Cricket</h3>
+                    <p>This sport is especially popular in Asian countries. After registering on the MegaPari website,
+                        you will be able to bet on hundreds of matches in all major championships:
+                    </p>
+                    <ul>
+                        <li>
+                            IPL;
+                        </li>
+                        <li>
+                            ODI;
+                        </li>
+                        <li>
+                            Ashes series;
+
+
+                        </li>
+                        <li>
+                            Twenty20;
+                        </li>
+                        <li>
+                            Australia vs England;
+                        </li>
+                        <li>
+                            Africa vs India, etc.
+                        </li>
+
+                    </ul>
+                    <p class="">
+                        Selecting a particular event, you will see a list of all the odds available for betting. Add
+                        them to the coupon, specify the type of bet and the amount and make your prediction.
+
+                    </p>
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/cricket-betting.webp" class="aspect-auto" alt="cricket betting on megapari">
+                </div>
+
+            </div>
+
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-[60%]">
+                    <h3 class="text-2xl font-bold py-3 sub-heading">Soccer</h3>
+                    <p>Soccer is very popular in European countries, but the people of Bangladesh also love it. This is
+                        the widest category for betting, offering more than 1,000 possible outcomes every day. We
+                        support dozens of competitions:
+
+
+                    </p>
+                    <ul>
+                        <li>
+                            Champions League;
+                        </li>
+                        <li>
+                            Europa League;
+                        </li>
+                        <li>
+                            Championships in Italy, England, France, Germany and dozens of other countries;
+
+                        </li>
+                        <li>
+                            World Championships, Europe, etc.
+
+                        </li>
+
+                    </ul>
+                    <p class="">
+                        Bets can be placed on both seasonal and friendly matches. And the choice of possible outcomes
+                        will please even the most avid betting fan.
+
+
+                    </p>
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/football-betting.webp" class="aspect-auto" alt="football betting on megapari">
+                </div>
+
+            </div>
+
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-[60%]">
+                    <h3 class="text-2xl font-bold py-3 sub-heading">Tennis</h3>
+                    <p>Many users love tennis and prefer to bet on this sport because of the wide possibilities and
+                        variability of the outcomes. At the same time, it is easier to predict the results than in
+                        soccer, hockey, and other team sports. At the MegaPari Bangladesh bookmaker office you can bet
+                        on different competitions:
+
+
+                    </p>
+                    <ul>
+                        <li>
+                            WTA;
+                        </li>
+                        <li>
+                            UTR;
+                        </li>
+                        <li>
+                            ITF;
+                        </li>
+                        <li>
+                            ATF;
+                        </li>
+                        <li>
+                            Challenger, etc.
+                        </li>
+
+                    </ul>
+                    <p class="">
+                        Select one of them from the list, specify the specific opposition, select the odds and place a
+                        bet in a few minutes.
+                    </p>
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/tennis-betting.webp" class="aspect-auto" alt="tennis betting on megapari">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Virtual Sports -->
+        <section id="virtual-sports">
+            <h2 class="heading">
+                Betting on virtual sports
+
+            </h2>
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-5">
+                <div class="lg:w-[60%]">
+                    <p>
+                        Every year cybersports are becoming more and more popular and are attracting more and more
+                        people. Many people like to bet on these sports. MegaPari actively develops this direction and
+                        offers to bet on many games:
+                    </p>
+                    <ul class="pt-5">
+                        <li class="">
+                            Dota 2;
+
+                        </li>
+                        <li class="">
+                            League of Legends;
+                        </li>
+                        <li>
+                            CS:GO;
+                        </li>
+                        <li>
+                            Halo;
+                        </li>
+                        <li>
+                            Rainbow Six;
+                        </li>
+                        <li>
+                            Age of Empires 2, etc.
+                        </li>
+
+                    </ul>
+                    <p>
+                        If you like cybersports, you can bet on them on the MegaPari website and app. We give you the
+                        opportunity to make predictions both before the matches and in live mode.
+                    </p>
+
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/Betting-on-virtual-sports.webp" class="aspect-auto"
+                        alt="betting on virtual sports of Megapari">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- live betting -->
+        <section id="live-betting">
+            <h2 class="heading">
+                Live Betting
+            </h2>
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-5">
+                <div class="lg:w-[60%]">
+                    <p>
+                        This category of sports betting will appeal to those who are well versed in at least one sport
+                        and are able to react quickly to events that occur on the field. The Live section presents
+                        matches that have already started. You can bet on them in real-time. This kind of prediction has
+                        a few important differences from the regular one:
+                    </p>
+                    <ul class="pt-5">
+                        <li class="">
+                            Every match presented here has already begun;
+
+                        </li>
+                        <li class="">
+                            For many matches there are live broadcasts that you can watch;
+
+                        </li>
+                        <li>
+                            Coefficients can change frequently, reacting to changes in the course of the confrontation.
+
+                        </li>
+
+
+                    </ul>
+                    <p>
+                        You can combine live bets with regular bets, make individual predictions, or express. The number
+                        of events constantly available to users exceeds 100 matches.
+
+
+                    </p>
+
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/Live-Betting.webp" class="aspect-auto"
+                        alt="betting on virtual sports of Megapari">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- betting odds -->
+        <section id="live-betting">
+            <h2 class="heading">
+                Live Betting
+            </h2>
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row items-center gap-5">
+                <div class="lg:w-[60%]">
+                    <p>
+                        You can use the odds offered by MegaPari BD to calculate the potential benefit of a bet. We use
+                        a system of decimals. Each odds has one digit before the decimal point and up to two more after
+                        it. To understand how much money you will get if your prediction is correct, multiply the bet
+                        amount by the odds.
+                    </p>
+
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/Betting-odds.webp" class="aspect-auto" alt="Betting odds">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- casino -->
+        <section id="casino">
+            <h2 class="heading">
+                Online Casino MegaPari
+            </h2>
+            <div class="pb-5 pt-10 flex flex-col lg:flex-row gap-5">
+                <div class="lg:w-[60%]">
+                    <p>
+                        We strive to make sure that all our customers get the most diverse opportunities for a pleasant
+                        pastime. Therefore, if you get tired of betting on sports, you can go to the online casino
+                        section and try your luck at thousands of gambling games. All of them are divided into two
+                        categories:
+                    </p>
+                    <ul class="pt-5">
+                        <li class="">
+                            Normal. These are slot machines, table games, and other entertainment that takes place
+                            without the participation of live people. The results depend on a random number generator;
+
+
+                        </li>
+                        <li class="">
+                            Live. In games with live dealers you can watch the host in live mode, communicate with him
+                            via chat, etc. The atmosphere of such games is as close to a real casino as possible, while
+                            the random number generator either does not affect the result or does so minimally.
+
+
+                        </li>
+
+
+
+                    </ul>
+                    <p>
+                        The list of entertainment at online casinos MegaPari Bangladesh is constantly expanding. You are
+                        always waiting for exciting games from the world’s best developers.
+
+                    </p>
+
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/megapri-casino.webp" class="aspect-auto" alt="casino experience with megapari">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- deposit -->
+        <section id="deposit">
+            <h2 class="heading">
+                Methods to deposit and withdraw money
+            </h2>
+            <p class="pt-5">
+                MegaPari Bangladesh supports dozens of payment systems, ranging from bank cards to cryptocurrencies. We
+                have provided the ability to deposit and withdraw money through most of the popular services in the
+                region, including:
+            </p>
+            <div class="flex flex-col lg:flex-row items-center gap-5">
+                <div class="lg:w-[60%]">
+
+                    <ul class="pt-5">
+                        <li class="">
+                            Nagad;
+
+
+                        </li>
+                        <li class="">
+                            Bkash;
+                        </li>
+
+                        <li>Rocket;
+                        </li>
+                        <li>
+                            Upay;
+                        </li>
+                        <li>
+                            AstroPay;
+                        </li>
+                        <li>
+                            Jeton Wallet;
+                        </li>
+
+                        <li>
+                            Kvitum;
+                        </li>
+
+                        <li>
+                            Cryptocurrencies.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/Methods-to-deposit-and-withdraw-money.webp" class="aspect-auto"
+                        alt="Methods to deposit and withdraw money">
+                </div>
+
+            </div>
+
+            <p>
+                The minimum deposit is only 75 BDT and the minimum withdrawal – is 150 BDT. Please note that
+                these limits may differ in different payment systems. But regardless of this, the deposit is
+                credited instantly, and the withdrawal takes no more than a few days.
+
+
+
+            </p>
+
+        </section>
+
+        <!-- support -->
+        <section id="support">
+            <h2 class="heading mb-5">
+                Player Support
+            </h2>
+
+            <div class="flex flex-col lg:flex-row items-center gap-5 mt-5">
+                <div class="lg:w-[60%]">
+                    <p class="pt-5">
+                        To solve problems and answer users’ questions, there is a 24-hour support service. You can send
+                        any questions to it and always count on a detailed consultation. The best way to contact them is
+                        by e-mail <a class="text-red-600" title="drop an email" aria-label="Email address" href="mailto:support@megapari.com">support@megapari.com</a>
+                        <br> <br>
+                        If you write about verification or security issues, use <a title="drop an email" aria-label="Email address"  class="text-red-600"
+                            href="mailto:support@megapari.com">support@megapari.com</a> <br> <br>
+                        You can also write to us in the chat room on the website. This method of communication is
+                        suitable if your question is urgent and its solution cannot be delayed.
+                    </p>
+
+
+                </div>
+                <div class="lg:w-[40%]">
+                    <img src="./assets/Player-Support.webp" class="aspect-auto" alt="Player support on Megapari">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="faq">
+            <h2 class="heading mb-5">
+                FAQ
+            </h2>
+            <p>
+                Below we provide answers to a few common player questions. Before you send a support request, make sure
+                that the information you need is not listed below.
+            </p>
+
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question" aria-label="Click to show answer for the question">How many accounts
+                        can I create? <div class="cross">
+                            <svg class="w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M16.6402 8.26824L10.6402 13.2682C9.61589 14.1218 8.33552 12.5854 9.35982 11.7318L15.3598 6.7318C16.3841 5.87822 17.6645 7.41466 16.6402 8.26824Z"
+                                        fill="#000000"></path>
+                                    <path
+                                        d="M4.64019 6.7318L10.6402 11.7318C11.6645 12.5854 10.3841 14.1218 9.35982 13.2682L3.35982 8.26824C2.33552 7.41466 3.61589 5.87822 4.64019 6.7318Z"
+                                        fill="#000000"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Users are allowed to have no more than one account. Re-registration is not allowed.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question" aria-label="Click to show answer for the question">Can I get the bonus
+                        in installments? <div class="cross">
+                            <svg class="w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M16.6402 8.26824L10.6402 13.2682C9.61589 14.1218 8.33552 12.5854 9.35982 11.7318L15.3598 6.7318C16.3841 5.87822 17.6645 7.41466 16.6402 8.26824Z"
+                                        fill="#000000"></path>
+                                    <path
+                                        d="M4.64019 6.7318L10.6402 11.7318C11.6645 12.5854 10.3841 14.1218 9.35982 13.2682L3.35982 8.26824C2.33552 7.41466 3.61589 5.87822 4.64019 6.7318Z"
+                                        fill="#000000"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No, you can only activate it once. The bonus can also be withdrawn only after the wagering
+                            conditions are met in full.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question" aria-label="Click to show answer for the question">Is sports betting legal? <div class="cross">
+                            <svg class="w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M16.6402 8.26824L10.6402 13.2682C9.61589 14.1218 8.33552 12.5854 9.35982 11.7318L15.3598 6.7318C16.3841 5.87822 17.6645 7.41466 16.6402 8.26824Z"
+                                        fill="#000000"></path>
+                                    <path
+                                        d="M4.64019 6.7318L10.6402 11.7318C11.6645 12.5854 10.3841 14.1218 9.35982 13.2682L3.35982 8.26824C2.33552 7.41466 3.61589 5.87822 4.64019 6.7318Z"
+                                        fill="#000000"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes, if you do them at a licensed bookmaker’s office. Mega Pari operates under a Curacao license.
+
+
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question" aria-label="Click to show answer for the question">Can I bet on BDT? <div class="cross">
+                            <svg class="w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M16.6402 8.26824L10.6402 13.2682C9.61589 14.1218 8.33552 12.5854 9.35982 11.7318L15.3598 6.7318C16.3841 5.87822 17.6645 7.41466 16.6402 8.26824Z"
+                                        fill="#000000"></path>
+                                    <path
+                                        d="M4.64019 6.7318L10.6402 11.7318C11.6645 12.5854 10.3841 14.1218 9.35982 13.2682L3.35982 8.26824C2.33552 7.41466 3.61589 5.87822 4.64019 6.7318Z"
+                                        fill="#000000"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes, you need to select BDT as your primary account currency when registering your account.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question" aria-label="Click to show answer for the question">Can I change the email linked to my account?<div class="cross">
+                            <svg class="w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M16.6402 8.26824L10.6402 13.2682C9.61589 14.1218 8.33552 12.5854 9.35982 11.7318L15.3598 6.7318C16.3841 5.87822 17.6645 7.41466 16.6402 8.26824Z"
+                                        fill="#000000"></path>
+                                    <path
+                                        d="M4.64019 6.7318L10.6402 11.7318C11.6645 12.5854 10.3841 14.1218 9.35982 13.2682L3.35982 8.26824C2.33552 7.41466 3.61589 5.87822 4.64019 6.7318Z"
+                                        fill="#000000"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>You can’t change it yourself, but you can contact support.
+                        </p>
+                    </div>
+                </details>
+
+            </div>
+        </section>
     </main>
+
+    <footer class="">
+        <div class="bg-black py-10 px-[5%]">
+            <h3 class="footer-title text-white relative text-lg">Information
+            </h3>
+            <nav class="text-white flex flex-col gap-3 mt-5">
+                <a href="responsible-gaming.html" title="Megapari Responsible Gaming" aria-label="Navigate to responsible gaming page">Responsible Gaming</a>
+                <a href="privacy-policy.html" title="Megapari Privacy Policy" aria-label="Navigate to privacy policy page">Privacy Policy</a>
+                <a href="license.html" title="Megapari License" aria-label="Navigate to License page">License</a>
+                <a href="anti-fraud.html" title="Megapari Anti-Fraud" aria-label="Navigate to Anti-Fraud page">Anti-Fraud</a>
+            </nav>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
