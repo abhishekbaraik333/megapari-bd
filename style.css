@@ -297,4 +297,7 @@ ul li:after {
   .faq-container{
     padding: 0;
   }
+  .scroll-to-top{
+    bottom: 55px;
+  }
 }
