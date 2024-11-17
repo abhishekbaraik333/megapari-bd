@@ -1233,6 +1233,21 @@ ul li:after {
   width: 100%;
 }
 
+.counters{
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap !important;
+  align-content: center;
+  justify-content: center;
+}
+
 @media (max-width:767px) {
   .faq-container{
     padding: 0;
@@ -1283,6 +1298,10 @@ ul li:after {
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 
   .lg\:w-\[230px\] {
