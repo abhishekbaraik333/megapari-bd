@@ -956,7 +956,7 @@ video {
 }
 
 :root {
-  --accent-color: rgb(231, 64, 55);
+  --accent-color: #009EDC;
 }
 
 * {
@@ -1195,6 +1195,7 @@ ul li:after {
 .faq-item {
   width: 100%;
   margin-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
 .faq-question {
@@ -1212,7 +1213,6 @@ ul li:after {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  border-bottom: 1px dashed black;
 }
 
 .faq-answer {
