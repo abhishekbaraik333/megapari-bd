@@ -595,6 +595,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -609,6 +613,10 @@ video {
 
 .table {
   display: table;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -761,24 +769,14 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-redColor {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 50 38 / var(--tw-border-opacity));
-}
-
 .border-blueColor {
   --tw-border-opacity: 1;
   border-color: rgb(0 158 220 / var(--tw-border-opacity));
 }
 
-.bg-\[\#1F1F1F\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
+.border-redColor {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 50 38 / var(--tw-border-opacity));
 }
 
 .bg-\[\#45454F\] {
@@ -791,6 +789,16 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blueColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 158 220 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
+}
+
 .bg-redColor {
   --tw-bg-opacity: 1;
   background-color: rgb(255 50 38 / var(--tw-bg-opacity));
@@ -799,11 +807,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blueColor {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 158 220 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -823,11 +826,6 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
 .px-\[5\%\] {
@@ -941,7 +939,7 @@ video {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(54 56 58 / var(--tw-text-opacity));
+  color: rgb(31 31 31 / var(--tw-text-opacity));
 }
 
 .text-red-400 {
@@ -1224,7 +1222,7 @@ ul li:after {
 .faq-item {
   width: 100%;
   margin-bottom: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .faq-question {
@@ -1311,11 +1309,6 @@ ul li:after {
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.hover\:border-black:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .hover\:bg-black:hover {
