@@ -575,12 +575,20 @@ video {
   bottom: 0.5rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
 .top-0 {
   top: 0px;
 }
 
 .z-\[1000\] {
   z-index: 1000;
+}
+
+.z-\[100\] {
+  z-index: 100;
 }
 
 .z-\[99\] {
