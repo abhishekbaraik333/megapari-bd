@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors:{
        primary:"#1F1F1F",
-       redColor:"#FF3226",
-       blueColor:"#009EDC",
+       redColor:"#ff0c00",
+       blueColor:"#008abc",
       }
     },
   },
