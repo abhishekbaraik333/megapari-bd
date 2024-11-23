@@ -784,7 +784,7 @@ video {
 
 .border-redColor {
   --tw-border-opacity: 1;
-  border-color: rgb(191 15 5 / var(--tw-border-opacity));
+  border-color: rgb(214 10 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#45454F\] {
@@ -809,7 +809,7 @@ video {
 
 .bg-redColor {
   --tw-bg-opacity: 1;
-  background-color: rgb(191 15 5 / var(--tw-bg-opacity));
+  background-color: rgb(214 10 0 / var(--tw-bg-opacity));
 }
 
 .bg-white {
