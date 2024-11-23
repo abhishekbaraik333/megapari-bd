@@ -970,6 +970,57 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[1f1f1f1f\] {
+  color: 1f1f1f1f;
+}
+
+.text-\[\#1f1f1f1f\] {
+  color: #1f1f1f1f;
+}
+
+.text-\[\#cecdcd1f\] {
+  color: #cecdcd1f;
+}
+
+.text-\[\#cecdcd\] {
+  --tw-text-opacity: 1;
+  color: rgb(206 205 205 / var(--tw-text-opacity));
+}
+
+.text-\[\#2d2c2c\] {
+  --tw-text-opacity: 1;
+  color: rgb(45 44 44 / var(--tw-text-opacity));
+}
+
+.text-\[\#ffff\] {
+  color: #ffff;
+}
+
+.text-\[\#444\] {
+  --tw-text-opacity: 1;
+  color: rgb(68 68 68 / var(--tw-text-opacity));
+}
+
+.text-\[\#0a0a0a\] {
+  --tw-text-opacity: 1;
+  color: rgb(10 10 10 / var(--tw-text-opacity));
+}
+
+.text-\[\#000000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#acacac\] {
+  --tw-text-opacity: 1;
+  color: rgb(172 172 172 / var(--tw-text-opacity));
+}
+
+.text-\[\#ffffff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
